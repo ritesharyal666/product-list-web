@@ -1,0 +1,83 @@
+/** Normalizing CSS **/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 16px;
+}
+/* End of Normalization*/
+body {
+  background-color: hsl(13, 31%, 94%);
+  min-height: 100vh;
+  font-family: "Red Hat Text";
+}
+.container {
+  max-width: 990px;
+  margin: 10px auto;
+  display: flex;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.23rem;
+}
+.product-section {
+  width: 66%;
+}
+.section-title {
+  font-size: 2.34rem;
+  color: hsl(14, 65%, 9%);
+  margin-bottom: 20px;
+}
+
+.product-item {
+  width: 30%;
+}
+.product-image img {
+  border-radius: 10px;
+}
+.product-image {
+  position: relative;
+}
+.cart-button {
+  position: absolute;
+  bottom: -10px;
+  left: 17%;
+  background: white;
+  padding: 8px 20px;
+  color: hsl(14, 65%, 9%);
+  border-radius: 30px;
+  font-weight: bold;
+  border: 1px solid hsl(12, 20%, 44%);
+}
+.cart-button img {
+  width: 20px;
+}
+.cart-button > * {
+  vertical-align: middle;
+}
+.product-content {
+  margin-top: 15px;
+}
+
+.category {
+  font-weight: lighter;
+  color: hsl(7, 20%, 60%);
+}
+.title {
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+  margin: 5px 0;
+}
+.price {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
